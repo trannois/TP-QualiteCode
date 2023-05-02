@@ -1,9 +1,9 @@
 ## Validateur de formulaire
 *Ceci est un exercice ne pas utiliser en production !*  
 
-Pour la contrainte que vous dévez implémenter vous devez rendre 3 fichiers : 
+Pour la contrainte que vous dévez implémenter vous devez rendre 4 fichiers : 
 { la classe, le formulaire d'exemple, le fichier de contrainte 
-allant avec l'exemple }.  
+allant avec l'exemple et le testunitaire de votre classe}.  
 
     |
     |_ conf
