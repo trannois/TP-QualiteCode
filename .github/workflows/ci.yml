@@ -25,4 +25,4 @@ jobs:
       - name: PHPUnit
         uses: php-actions/phpunit@v3
         with:
-          args: test/src
+          args: test
