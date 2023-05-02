@@ -6,8 +6,6 @@
 
 namespace UPJV\Validator;
 
-require_once __DIR__."/ValidatorInterface.php";
-
 /**
  * Class Min implémente les méthode build & check
  */
