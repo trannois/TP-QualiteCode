@@ -5,7 +5,7 @@ use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\Test;
 
-#[CoversClass("Validator")]
+#[CoversClass("UPJV\Validator\Min")]
 final class MinTest extends TestCase
 {
 
