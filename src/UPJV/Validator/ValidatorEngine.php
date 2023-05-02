@@ -51,6 +51,9 @@ class ValidatorEngine
     public function run(array $inputs): bool
     {
         foreach ($inputs as $name => $val) {
+            if ($name === "contrainte") {
+                continue;
+            }
             if (!array_key_exists($name, $this->setOfValidator)) {
                 return false;
             }

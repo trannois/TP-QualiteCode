@@ -1,0 +1,32 @@
+name: CI
+on: [push]
+jobs:
+  phpcs:
+    name: PHPCS
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Composer install
+        uses: php-actions/composer@v6
+
+      - name: PHP Code Sniffer
+        uses: php-actions/phpcs@v1
+        with:
+          php_version: 8.1
+          path: src
+          standard: ${{ github.workspace }}/test/phpcs/Symfony
+
+  phpunit:
+    name: PHPUNIT
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Composer install
+        uses: php-actions/composer@v6
+
+      - name: PHPUnit
+        uses: php-actions/phpunit@v3
+        with:
+          args: test/src
