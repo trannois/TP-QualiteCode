@@ -10,12 +10,8 @@ jobs:
       - name: Composer install
         uses: php-actions/composer@v6
 
-      - name: PHP Code Sniffer
-        uses: php-actions/phpcs@v1
-        with:
-          php_version: 8.1
-          path: src
-          standard: ${{ github.workspace }}/test/phpcs/Symfony
+      - run: curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
+      - run: php phpcs.phar --standard=${{ github.workspace }}/test/phpcs/Symfony src
 
   phpunit:
     name: PHPUNIT
