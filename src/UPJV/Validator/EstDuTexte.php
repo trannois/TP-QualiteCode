@@ -11,7 +11,7 @@ namespace UPJV\Validator;
  */
 class EstDuTexte implements ValidatorInterface
 {
-    protected [] $tabl = [];
+    protected array $tabl = [];
     /**
      * Récupère le tableau spécifier dans la conf
      *
