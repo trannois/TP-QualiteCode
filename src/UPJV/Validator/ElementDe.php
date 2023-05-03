@@ -13,7 +13,6 @@ class ElementDe implements ValidatorInterface
 {
     //array of string
     protected array $tabl = [];
-    
 
     /**
      * Récupère le tableau spécifier dans la conf
@@ -38,8 +37,8 @@ class ElementDe implements ValidatorInterface
      */
     public function check($input): bool
     {
-        foreach($this->tabl as $element){
-            if($input == $element){
+        foreach ($this->tabl as $element) {
+            if ($input == $element) {
                 return true;
             }
         }
