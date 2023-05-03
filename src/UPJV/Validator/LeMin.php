@@ -25,7 +25,6 @@ class LeMin implements ValidatorInterface
         $this->size = $param[0];
 
         return $this;
-        
     }
 
     /**
