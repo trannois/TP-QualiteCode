@@ -12,11 +12,9 @@ namespace UPJV\Validator;
 class EstDuTexte implements ValidatorInterface
 {
     /**
-     * Vérifie que l'input contient uniquement des caractères alphabétiques
-     *
-     * @param $input
-     *
-     * @return bool
+     * Retourne une instance de la classe EstDuTexte
+     * @param array $param
+     * @return EstDuTexte
      */
     public function build(array $param): object
     {
