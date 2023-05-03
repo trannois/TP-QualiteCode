@@ -38,7 +38,6 @@ class ElementDe implements ValidatorInterface
     public function check($input): bool
     {
         foreach ($this->tabl as $element) {
-            
             if ($input === $element) {
                 return true;
             }
