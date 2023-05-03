@@ -1,8 +1,8 @@
 <?php
 
 use UPJV\Validator\LongueurMax;
-require_once 'src/UPJV/Validator/LongueurMax.php';
 require_once 'src/UPJV/Validator/ValidatorInterface.php';
+require_once 'src/UPJV/Validator/LongueurMax.php';
 require_once 'src/UPJV/Validator/ValidatorEngine.php';
 
 
