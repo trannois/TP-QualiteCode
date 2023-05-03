@@ -11,10 +11,13 @@ namespace UPJV\Validator;
  */
 class EstDuTexte implements ValidatorInterface
 {
+    protected [] $tabl = [];
     /**
-     * Retourne une instance de la classe EstDuTexte
+     * Récupère le tableau spécifier dans la conf
+     *
      * @param array $param
-     * @return EstDuTexte
+     *
+     * @return object
      */
     public function build(array $param): object
     {
