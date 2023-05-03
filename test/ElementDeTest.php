@@ -2,6 +2,7 @@
 use PHPUnit\Framework\TestCase;
 use UPJV\Validator;;
 
+require_once 'src/UPJV/Validator/ValidatorInterface.php';
 require_once 'src/UPJV/Validator/ElementDe.php';
 
 /*
