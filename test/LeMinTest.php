@@ -2,7 +2,7 @@
 use PHPUnit\Framework\TestCase;
 use UPJV\Validator\LeMin;
 
-require_once 'srcUPJV/Validator/LeMin.php';
+require_once 'src/UPJV/Validator/LeMin.php';
 
 class LeMinTest extends TestCase
 {
