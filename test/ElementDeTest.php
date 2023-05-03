@@ -13,6 +13,7 @@ final class ElementDeTest extends TestCase
     {
         $validator = new UPJV\Validator\ElementDe();
         $validator->build(['test', 'test2']);
+        
         $this->assertTrue($validator->check('test'));
         $this->assertFalse($validator->check('t'));    
     }
