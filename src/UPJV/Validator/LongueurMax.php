@@ -9,7 +9,7 @@ namespace UPJV\Validator;
 /**
  * Class longueur_Max implémente les méthode build & check
  */
-class Longueur_max implements ValidatorInterface
+class LongueurMax implements ValidatorInterface
 {
     protected int $size;
 
