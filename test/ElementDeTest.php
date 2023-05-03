@@ -1,6 +1,6 @@
 <?php
 use PHPUnit\Framework\TestCase;
-use UPJV\Validator\ElementDe;
+use UPJV\Validator;;
 
 require_once 'src/UPJV/Validator/ElementDe.php';
 
@@ -11,7 +11,7 @@ final class ElementDeTest extends TestCase
 {
     public function testcheck()
     {
-        $validator = new ElementDe();
+        $validator = new Validator\ElementDe();
         $validator->build(['test', 'test2']);
 
         $this->assertTrue($validator->check('test'));
