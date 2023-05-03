@@ -5,10 +5,13 @@ namespace UPJV\Validator\Test;
 use PHPUnit\Framework\TestCase;
 use UPJV\Validator\EstUnEmail;
 
+require_once __DIR__.'/../src/UPJV/Validator/ValidatorInterface.php';
+require_once __DIR__.'/../src/UPJV/Validator/ValidatorEngine.php';
+require_once __DIR__.'/../src/UPJV/Validator/EstUnEmail.php';
+
 class EstUnEmailTest extends TestCase
 {
     /**
-     * Teste la validation d'une adresse email valide.
      */
     public function testValidationEmailValide(): void
     {
